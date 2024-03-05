@@ -1,0 +1,93 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+.container {
+  max-width: 600px;
+  margin: 100px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.highscores {
+  text-decoration: none;
+  color: #333;
+}
+
+#timer {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.score {
+  font-size: 18px;
+  margin-bottom: 10px;
+  padding-left: 10px;
+}
+
+#highscores {
+  margin-bottom: 10px;
+}
+
+#question {
+  margin-bottom: 20px;
+}
+
+#questionText, #highscoresText {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+#answers, #scores {
+  display: flex;
+  flex-direction: column;
+}
+
+.answer, #back {
+  margin-bottom: 10px;
+  padding: 10px 20px;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #4caf50;
+  color: #fff;
+  transition: background-color 0.3s;
+  text-align: center;
+  text-decoration: none;
+}
+
+.answer:hover {
+  background-color: #45a049;
+}
+
+#initials-input {
+  margin-bottom: 10px;
+  padding: 10px 20px;
+  font-size: 18px;
+  border: 2px solid #4caf50; /* Green border */
+  border-radius: 5px;
+  color: #333; /* Text color */
+  transition: border-color 0.3s; /* Add transition for border color */
+  outline: none; /* Remove default outline */
+}
+
+#initials-input::placeholder {
+  color: #777; /* Placeholder color */
+}
+
+#initials-input:focus {
+  border-color: #45a049; /* Darker green border on focus */
+}
